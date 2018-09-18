@@ -1,0 +1,16 @@
+'''Calculate the median of the two sorted array'''
+class Solution:
+  new_list =[]
+  def findMedianSortedArrays(l1,l2):
+    new_list = l1 + l2
+    sorted_new_list = sorted(new_list)
+    val = len(sorted_new_list)
+    if (val % 2 != 0):
+      return float(sorted_new_list[val //2]
+    elif (val %2 ==0):
+      num1 = sorted_new_list[val/2 -1]
+      num2 = sorted_new_list [val/2]
+      return (num1 +num2 )/2
+a = Solution()
+a.findMedianSortedArrays([1,2,3,4,5] ,[6,7,8,9])
+  
